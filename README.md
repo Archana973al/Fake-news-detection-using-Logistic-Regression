@@ -56,6 +56,7 @@ jupyter notebook fakenewsdetection.ipynb
 
 # Results
 ![Image](https://github.com/user-attachments/assets/8e62c02a-1578-40fe-9ad2-a8ce47bf449a)
+
 The Logistic Regression model achieves an accuracy of 98.7% on the test dataset. The classification report provides detailed metrics such as precision, recall, and F1-score for both "fake" and "real" news classes.
 
 ![Image](https://github.com/user-attachments/assets/53873856-b222-4837-9ec7-9017c85ed20d)
@@ -72,6 +73,7 @@ False Positives (FP): Real news incorrectly predicted as fake.
 False Negatives (FN): Fake news incorrectly predicted as real.
 
 Confusing matrix:![Image](https://github.com/user-attachments/assets/30c71598-edee-4248-9e41-5904f88df304)
+
 
 manual input:![Image](https://github.com/user-attachments/assets/d197e1f1-b5b4-4ade-9629-6c0f20eb757c)
 
