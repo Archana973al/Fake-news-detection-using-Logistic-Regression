@@ -75,7 +75,9 @@ False Negatives (FN): Fake news incorrectly predicted as real.
 Confusing matrix:![Image](https://github.com/user-attachments/assets/30c71598-edee-4248-9e41-5904f88df304)
 
 
-manual input:![Image](https://github.com/user-attachments/assets/d197e1f1-b5b4-4ade-9629-6c0f20eb757c)
+manual input:
+
+![Image](https://github.com/user-attachments/assets/d197e1f1-b5b4-4ade-9629-6c0f20eb757c)
 
 # Contributing
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
