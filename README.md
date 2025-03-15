@@ -67,6 +67,7 @@ True Negatives (TN): Correctly predicted real news.
 False Positives (FP): Real news incorrectly predicted as fake.
 
 False Negatives (FN): Fake news incorrectly predicted as real.
+Confusing matrix:https://github.com/Archana973al/Fake-news-detection-using-Logistic-Regression/blob/main/Screenshot%202025-03-15%20110129.png
 
 # Contributing
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
