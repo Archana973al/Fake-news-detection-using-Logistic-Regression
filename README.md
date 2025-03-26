@@ -1,58 +1,75 @@
-# Fake-news-detection-using-Logistic-Regression
+# ⚠️ Fake-news-detection-using-Logistic-Regression
 
 # Overview
-Fake news has become a significant issue in today's digital age. This project aims to detect fake news using machine learning techniques. The notebook walks through the following steps:
+Fake news has become a significant issue in today's digital age. This project aims to detect fake news using machine learning techniques. 
 
-Data Loading: Loading fake and real news datasets.
+The notebook walks through the following steps:
 
-Data Preprocessing: Cleaning and preparing the text data for analysis.
+### 1. 📥 Data Loading
+```python
+fake_news = pd.read_csv("fake.csv")
+real_news = pd.read_csv("true.csv")
+```
+### 🧹 Data Preprocessing: Cleaning and preparing the text data for analysis.
 
-Feature Extraction: Using TF-IDF Vectorization to convert text into numerical features.
+### 🔢 Feature Extraction: Using TF-IDF Vectorization to convert text into numerical features.
 
-Model Training: Training a Logistic Regression model on the processed data.
+### 🤖 Model Training: Training a Logistic Regression model on the processed data.
 
-Evaluation: Evaluating the model's performance using accuracy and a classification report.
+###  📊 Evaluation: Evaluating the model's performance using accuracy and a classification report.
 
-# Dataset
-The dataset used in this project consists of two CSV files:
+## 📂 Dataset
 
-Fake.csv: Contains fake news articles.
+### Composition
+| File       | Samples | Content Type          | Source         |
+|------------|---------|-----------------------|----------------|
+| `Fake.csv` | 23,481  | Fabricated news articles | Kaggle/ISOT    |
+| `True.csv` | 21,417  | Verified news reports  | Reuters/BBC    |
 
-True.csv: Contains real news articles.
+### Key Characteristics
+```python
+print(df.info())
+```
 
-# Dependencies
-To run the code in this notebook, you need the following Python libraries:
+## 📦 Dependencies
 
-pandas
+### Core Libraries
+| Library       | Version | Purpose                     |
+|---------------|---------|-----------------------------|
+| `pandas`      | >=1.3.0 | Data manipulation           |
+| `numpy`       | >=1.21.0| Numerical operations        |
+| `scikit-learn`| >=1.0   | Machine learning models     |
+| `seaborn`     | >=0.11  | Statistical visualizations  |
+| `matplotlib`  | >=3.5   | Plotting graphs             |
 
-numpy
+### Pre-installed Utilities
+- `re` (Python built-in): Text pattern matching
+- `string` (Python built-in): String operations
 
-scikit-learn
-
-seaborn
-
-matplotlib
-
-re
-
-string
-
-
-You can install the required libraries using the following command:
-
+### Installation
+```bash
 pip install pandas numpy scikit-learn seaborn matplotlib
-
+```
 # Usage
-1.Clone this repository to your local machine:
-
+### 1. Clone Repository
+```bash
 git clone https://github.com/Archana973al/Fake-news-detection-using-Logistic-Regression
+cd Fake-news-detection-using-Logistic-Regression
+```
+### 2.Prepare Data:# Ensure dataset files are in project root:
+ls Fake.csv True.csv
+### 3.Launch Jupyter:jupyter notebook fakenewsdetection.ipynb
+### 4. Execute Notebook
+▶️ Run cells sequentially:
 
-2.Ensure the dataset files (Fake.csv and True.csv) are in the same directory as the notebook.
+Data Loading (Ctrl+Enter)
 
-3.Open the Jupyter notebook:
-jupyter notebook fakenewsdetection.ipynb
+Preprocessing (Shift+Enter)
 
-4.Run the notebook cells sequentially to load the data, preprocess it, train the model, and evaluate its performance.
+Model Training (Shift+Enter)
+
+Evaluation (Shift+Enter)
+
 
 # Results
 ![Image](https://github.com/user-attachments/assets/8e62c02a-1578-40fe-9ad2-a8ce47bf449a)
@@ -61,7 +78,7 @@ The Logistic Regression model achieves an accuracy of 98.7% on the test dataset.
 
 ![Image](https://github.com/user-attachments/assets/53873856-b222-4837-9ec7-9017c85ed20d)
 
-Confusion Matrix
+## 📊Confusion Matrix
 The confusion matrix shows the number of correct and incorrect predictions:
 
 True Positives (TP): Correctly predicted fake news.
@@ -71,7 +88,10 @@ True Negatives (TN): Correctly predicted real news.
 False Positives (FP): Real news incorrectly predicted as fake.
 
 False Negatives (FN): Fake news incorrectly predicted as real.
-
+              Predicted
+              Fake   Real
+Actual Fake  [3842   389]
+       Real  [ 257  4112]
 Confusing matrix:![Image](https://github.com/user-attachments/assets/30c71598-edee-4248-9e41-5904f88df304)
 
 
