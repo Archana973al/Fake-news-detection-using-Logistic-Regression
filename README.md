@@ -3,7 +3,7 @@
 # Overview
 Fake news has become a significant issue in today's digital age. This project aims to detect fake news using machine learning techniques. 
 
-The notebook walks through the following steps:
+## The notebook walks through the following steps:
 
 ### 1. 📥 Data Loading
 ```python
