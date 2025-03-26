@@ -10,13 +10,13 @@ The notebook walks through the following steps:
 fake_news = pd.read_csv("fake.csv")
 real_news = pd.read_csv("true.csv")
 ```
-### 🧹 Data Preprocessing: Cleaning and preparing the text data for analysis.
+### 2.🧹 Data Preprocessing: Cleaning and preparing the text data for analysis.
 
-### 🔢 Feature Extraction: Using TF-IDF Vectorization to convert text into numerical features.
+### 3.🔢 Feature Extraction: Using TF-IDF Vectorization to convert text into numerical features.
 
-### 🤖 Model Training: Training a Logistic Regression model on the processed data.
+### 4.🤖 Model Training: Training a Logistic Regression model on the processed data.
 
-###  📊 Evaluation: Evaluating the model's performance using accuracy and a classification report.
+### 5.📊 Evaluation: Evaluating the model's performance using accuracy and a classification report.
 
 ## 📂 Dataset
 
@@ -50,7 +50,7 @@ print(df.info())
 ```bash
 pip install pandas numpy scikit-learn seaborn matplotlib
 ```
-# Usage
+## Usage
 ### 1. Clone Repository
 ```bash
 git clone https://github.com/Archana973al/Fake-news-detection-using-Logistic-Regression
@@ -71,7 +71,7 @@ Model Training (Shift+Enter)
 Evaluation (Shift+Enter)
 
 
-# Results
+## Results
 ![Image](https://github.com/user-attachments/assets/8e62c02a-1578-40fe-9ad2-a8ce47bf449a)
 
 The Logistic Regression model achieves an accuracy of 98.7% on the test dataset. The classification report provides detailed metrics such as precision, recall, and F1-score for both "fake" and "real" news classes.
@@ -88,10 +88,7 @@ True Negatives (TN): Correctly predicted real news.
 False Positives (FP): Real news incorrectly predicted as fake.
 
 False Negatives (FN): Fake news incorrectly predicted as real.
-              Predicted
-              Fake   Real
-Actual Fake  [3842   389]
-       Real  [ 257  4112]
+             
 Confusing matrix:![Image](https://github.com/user-attachments/assets/30c71598-edee-4248-9e41-5904f88df304)
 
 
